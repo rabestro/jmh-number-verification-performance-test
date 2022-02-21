@@ -1,0 +1,48 @@
+### Run complete. Total time: 00:51:50
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                   (sequenceType)  Mode  Cnt         Score        Error  Units
+IntervalsPrinterBenchmark.binary2Algorithm            20/5  avgt    5       591.625 ±     96.764  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm          100/10  avgt    5      1363.391 ±     10.190  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm           1K/10  avgt    5      2505.806 ±     18.137  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm          10K/10  avgt    5      3260.886 ±   2202.510  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm         100K/10  avgt    5      3869.140 ±     15.406  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm           1M/10  avgt    5      5887.983 ±     32.935  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm          10M/10  avgt    5      8080.156 ±     14.542  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm        100M/100  avgt    5    102211.570 ±   1956.826  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm         100M/10  avgt    5      7020.673 ±    816.494  ns/op
+IntervalsPrinterBenchmark.binary2Algorithm          100M/5  avgt    5      1993.606 ±     36.496  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm             20/5  avgt    5       786.122 ±     18.582  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm           100/10  avgt    5      1564.961 ±     14.360  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm            1K/10  avgt    5      1639.219 ±      6.942  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm           10K/10  avgt    5      3170.141 ±     58.053  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm          100K/10  avgt    5      3698.530 ±     17.252  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm            1M/10  avgt    5      6626.572 ±    380.519  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm           10M/10  avgt    5     11622.410 ±    287.462  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm         100M/100  avgt    5    108881.347 ±    699.919  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm          100M/10  avgt    5     10181.568 ±     65.840  ns/op
+IntervalsPrinterBenchmark.binaryAlgorithm           100M/5  avgt    5      7538.609 ±     79.445  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm             20/5  avgt    5       162.494 ±      0.978  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm           100/10  avgt    5       508.783 ±      3.461  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm            1K/10  avgt    5      2239.188 ±     52.307  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm           10K/10  avgt    5     13107.148 ±     13.721  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm          100K/10  avgt    5     60734.431 ±    143.112  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm            1M/10  avgt    5    653895.328 ± 300641.474  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm           10M/10  avgt    5   7462300.104 ±  15817.963  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm         100M/100  avgt    5  85011199.529 ±  77399.451  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm          100M/10  avgt    5  85004000.112 ± 115198.824  ns/op
+IntervalsPrinterBenchmark.simpleAlgorithm           100M/5  avgt    5  84940913.508 ±  83028.244  ns/op
+
+Process finished with exit code 0
+

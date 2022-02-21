@@ -1,0 +1,16 @@
+Benchmark                         (sequenceType)  Mode  Cnt       Score        Error  Units
+IntervalsPrinter.binaryAlgorithm           1M/10  avgt    5    8343.408 ±    212.627  ns/op
+IntervalsPrinter.simpleAlgorithm           1M/10  avgt    5  743151.108 ± 850216.932  ns/op
+
+IntervalsPrinter.binaryAlgorithm          1M/100  avgt    5   61621.382 ±   1888.708  ns/op
+IntervalsPrinter.simpleAlgorithm          1M/100  avgt    5  773196.424 ± 622640.816  ns/op
+
+IntervalsPrinter.binaryAlgorithm         1M/1000  avgt    5  540357.138 ±  61779.970  ns/op
+IntervalsPrinter.simpleAlgorithm         1M/1000  avgt    5  676403.286 ±   6683.454  ns/op
+
+IntervalsPrinter.binaryAlgorithm           1K/10  avgt    5    3614.825 ±    185.977  ns/op
+IntervalsPrinter.simpleAlgorithm           1K/10  avgt    5    1106.529 ±      0.801  ns/op
+
+IntervalsPrinter.binaryAlgorithm          1K/100  avgt    5   14597.647 ±     99.153  ns/op
+IntervalsPrinter.simpleAlgorithm          1K/100  avgt    5    4083.131 ±     31.596  ns/op
+
